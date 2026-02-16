@@ -5,6 +5,8 @@ youtube-search-python
 youtube-search
 langgraph
 langchain
+langchain_groq
+langchain_ollama
 langchain_community
 langchain_openai
 langchain_core
