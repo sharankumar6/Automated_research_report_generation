@@ -14,4 +14,3 @@ wikipedia
 lxml
 langchain-tavily
 yfinance
-ddgs
