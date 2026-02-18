@@ -49,3 +49,15 @@ if __name__ == "__main__":
     logger = CustomLogger().get_logger(__file__)
     logger.info("User uploaded a file", user_id=123, filename="report.pdf")
     logger.error("Failed to process PDF", error="File not found", user_id=123)
+
+
+"""
+# Prompt for Vibe code
+
+Create a production-ready Python custom logger class that automatically creates a logs/ directory if it does not already exist
+and generates a timestamp-based log file name for persistent logging. The logger should log messages to both the console and a 
+file simultaneously. Use the structlog library to implement structured JSON logging. Ensure that each log entry includes an ISO 
+8601 UTC timestamp and the log level in the output. The logs must be rendered in proper JSON format. The logger should support 
+passing additional contextual fields such as user_id, filename, error, or any custom metadata dynamically. Finally, the class 
+should return a reusable logger instance that can be used across the application.
+"""
