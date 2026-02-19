@@ -1,0 +1,2 @@
+{"path": "F:\\Sharan AI Projects\\GenAI AgenticAI Projects\\Automated_research_report_generation\\research_and_analyst\\config\\configuration.yaml", "keys": ["llm"], "timestamp": "2026-02-19T07:12:51.844206Z", "level": "info", "event": "Configuration loaded successfully"}
+{"timestamp": "2026-02-19T07:12:51.844206Z", "level": "info", "event": "ConfigLoader test run completed successfully"}

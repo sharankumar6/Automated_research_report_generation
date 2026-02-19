@@ -1,0 +1,10 @@
+{"timestamp": "2026-02-19T08:02:27.558573Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2026-02-19T08:02:27.559574Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-02-19T08:02:27.559574Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "F:\\Sharan AI Projects\\GenAI AgenticAI Projects\\Automated_research_report_generation\\research_and_analyst\\config\\configuration.yaml", "keys": ["llm"], "timestamp": "2026-02-19T08:02:27.560574Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["llm"], "timestamp": "2026-02-19T08:02:27.561709Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "google", "model": "gemini-3-flash-preview", "timestamp": "2026-02-19T08:02:27.562095Z", "level": "info", "event": "Loading LLM"}
+{"provider": "google", "model": "gemini-3-flash-preview", "timestamp": "2026-02-19T08:02:27.719914Z", "level": "info", "event": "LLM loaded successfully"}
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+{"timestamp": "2026-02-19T08:03:01.754441Z", "level": "info", "event": "ModelLoader test completed successfully"}
