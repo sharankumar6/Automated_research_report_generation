@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
 
 """
-# Prompt for Vibe code
+Prompt for Vibe code
 
 Create a production-ready Python custom logger class that automatically creates a logs/ directory if it does not already exist
 and generates a timestamp-based log file name for persistent logging. The logger should log messages to both the console and a 

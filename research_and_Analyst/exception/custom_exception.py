@@ -1,3 +1,5 @@
+# https://docs.python.org/3/tutorial/errors.html#exceptions
+
 import sys
 import traceback
 from typing import Optional, cast
@@ -59,7 +61,6 @@ if __name__ == "__main__":
     except Exception as e:
         raise ResearchAnalystException("Division failed", e) from e
 
-
     # Demo-2: still supports sys (old pattern)
     # try:
     #     a = int("abc")
@@ -85,7 +86,10 @@ if __name__ == "__main__":
 # 👉 Matlab: unexpected / unhandled errors ko wrap karke clean error banana.
 
 
-""" Create a Python base custom exception class for a production AI/LLM pipeline that:
+""" 
+Prompt for Vibe code
+
+Create a Python base custom exception class for a production AI/LLM pipeline that:
 Captures file name and line number from traceback
 Supports wrapping original exceptions
 Extracts full traceback string
