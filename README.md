@@ -14,3 +14,8 @@
 #         - Workflow
 #         - Utility
 #         - config
+
+
+'''
+* Run the code: uvicorn research_and_analyst.api.main:app --reload
+'''

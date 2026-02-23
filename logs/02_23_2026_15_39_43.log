@@ -1,0 +1,103 @@
+{"timestamp": "2026-02-23T10:10:04.186591Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2026-02-23T10:10:04.187588Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-02-23T10:10:04.187588Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "F:\\Sharan AI Projects\\GenAI AgenticAI Projects\\Automated_research_report_generation\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-02-23T10:10:04.190125Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-02-23T10:10:04.190125Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "groq", "model": "llama-3.3-70b-versatile", "timestamp": "2026-02-23T10:10:04.191145Z", "level": "info", "event": "Loading LLM"}
+{"provider": "groq", "model": "llama-3.3-70b-versatile", "timestamp": "2026-02-23T10:10:04.485799Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-02-23T10:10:04.486802Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-02-23T10:10:04.487799Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-02-23T10:10:04.509463Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-02-23T10:10:04.522520Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "topic": "GenAi in Civil Engineering", "thread_id": "030012d3-5483-4931-a7c1-7c2803171366", "timestamp": "2026-02-23T10:10:04.523052Z", "level": "info", "event": "Starting report pipeline"}
+{"module": "AutonomousReportGenerator", "topic": "GenAi in Civil Engineering", "timestamp": "2026-02-23T10:10:04.530170Z", "level": "info", "event": "Creating analyst personas"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "count": 3, "timestamp": "2026-02-23T10:10:05.411935Z", "level": "info", "event": "Analysts created"}
+{"timestamp": "2026-02-23T10:10:20.091446Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2026-02-23T10:10:20.093772Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-02-23T10:10:20.093772Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "F:\\Sharan AI Projects\\GenAI AgenticAI Projects\\Automated_research_report_generation\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-02-23T10:10:20.097018Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-02-23T10:10:20.097018Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "groq", "model": "llama-3.3-70b-versatile", "timestamp": "2026-02-23T10:10:20.097018Z", "level": "info", "event": "Loading LLM"}
+{"provider": "groq", "model": "llama-3.3-70b-versatile", "timestamp": "2026-02-23T10:10:20.150438Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-02-23T10:10:20.151415Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-02-23T10:10:20.151415Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-02-23T10:10:20.167369Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-02-23T10:10:20.180127Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "thread_id": "030012d3-5483-4931-a7c1-7c2803171366", "timestamp": "2026-02-23T10:10:20.184835Z", "level": "info", "event": "Feedback updated"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Rachel Kim", "timestamp": "2026-02-23T10:10:20.198242Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Mark Chen", "timestamp": "2026-02-23T10:10:20.206598Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Liam Patel", "timestamp": "2026-02-23T10:10:20.207609Z", "level": "info", "event": "Generating analyst question"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Emily Chen, an analyst with a focus on emerging technologies in construction. I'm excited to learn from the expert about the applications of GenAI in structural engineering. \n\nExpert, I'd l", "timestamp": "2026-02-23T10:10:20.685484Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-02-23T10:10:20.686491Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Rachel Chen, an analyst with a focus on emerging technologies. I'm excited to learn from the expert about the regulatory frameworks necessary to support the safe and responsible use of GenA", "timestamp": "2026-02-23T10:10:20.714802Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-02-23T10:10:20.717327Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Rachel Lee, an analyst with a focus on emerging technologies in construction. I'm excited to learn from the expert's experience and insights on the integration of Generative Artificial Inte", "timestamp": "2026-02-23T10:10:20.850261Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-02-23T10:10:20.850261Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "GenAI applications in structural engineering examples", "timestamp": "2026-02-23T10:10:20.870248Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "GenAI applications in civil engineering and associated regulatory frameworks", "timestamp": "2026-02-23T10:10:21.022643Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "GenAI applications in civil engineering design optimization and project management", "timestamp": "2026-02-23T10:10:21.145631Z", "level": "info", "event": "Performing Tavily web search"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2026-02-23T10:10:23.198523Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Rachel Kim", "timestamp": "2026-02-23T10:10:23.198523Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2026-02-23T10:10:23.300522Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Mark Chen", "timestamp": "2026-02-23T10:10:23.301492Z", "level": "info", "event": "Generating expert answer"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": " \n\nPlease share your insights, and I'll make sure to take notes and follow up with more questions. \n\n(Note: Since the user didn't ask a specific question, I've rephrased the response to start a conver", "timestamp": "2026-02-23T10:10:23.694040Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2026-02-23T10:10:23.694040Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Rachel Kim", "timestamp": "2026-02-23T10:10:23.694040Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": " \n\nAlso, I'd like to know more about the potential challenges and limitations of implementing GenAI in civil engineering projects. What are some of the key considerations that project managers and eng", "timestamp": "2026-02-23T10:10:24.164198Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2026-02-23T10:10:24.166190Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Mark Chen", "timestamp": "2026-02-23T10:10:24.166190Z", "level": "info", "event": "Generating report section"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2026-02-23T10:10:24.889960Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Liam Patel", "timestamp": "2026-02-23T10:10:24.889960Z", "level": "info", "event": "Generating expert answer"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 2793, "timestamp": "2026-02-23T10:10:25.249437Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3254, "timestamp": "2026-02-23T10:10:25.679382Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": " \n\nPlease provide your answer based on the context provided, and include the sources next to any relevant statements. \n\nI'll make sure to take note of your response and ask follow-up questions to delv", "timestamp": "2026-02-23T10:10:33.662698Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2026-02-23T10:10:33.662698Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Liam Patel", "timestamp": "2026-02-23T10:10:33.662698Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3582, "timestamp": "2026-02-23T10:10:47.046906Z", "level": "info", "event": "Report section generated successfully"}
+{"module": "AutonomousReportGenerator", "topic": "GenAi in Civil Engineering", "timestamp": "2026-02-23T10:10:47.050916Z", "level": "info", "event": "Generating conclusion"}
+{"module": "AutonomousReportGenerator", "topic": "GenAi in Civil Engineering", "timestamp": "2026-02-23T10:10:47.050916Z", "level": "info", "event": "Generating introduction"}
+{"module": "AutonomousReportGenerator", "topic": "GenAi in Civil Engineering", "timestamp": "2026-02-23T10:10:47.053079Z", "level": "info", "event": "Writing report"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /openai/v1/chat/completions in 12.000000 seconds
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 580, "timestamp": "2026-02-23T10:10:58.675254Z", "level": "info", "event": "Conclusion generated"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 585, "timestamp": "2026-02-23T10:11:10.045478Z", "level": "info", "event": "Introduction generated"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+{"module": "RateLimiter", "attempt": 1, "max_retries": 5, "wait_seconds": 15, "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hts29y3wesqbb3pcn2830acd` service tier `on_demand` on tokens per minute (TPM): Li", "timestamp": "2026-02-23T10:11:10.298476Z", "level": "warning", "event": "Rate limit hit, retrying after backoff"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "timestamp": "2026-02-23T10:11:27.108293Z", "level": "info", "event": "Report written successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-02-23T10:11:27.108293Z", "level": "info", "event": "Finalizing report compilation"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-02-23T10:11:27.109297Z", "level": "info", "event": "Report finalized"}
+{"module": "AutonomousReportGenerator", "topic": "GenAi in Civil Engineering", "format": "docx", "timestamp": "2026-02-23T10:11:27.110808Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "F:\\Sharan AI Projects\\GenAI AgenticAI Projects\\Automated_research_report_generation\\generated_report\\GenAi_in_Civil_Engineering_20260223_154127\\GenAi_in_Civil_Engineering_20260223_154127.docx", "timestamp": "2026-02-23T10:11:27.166021Z", "level": "info", "event": "Report saved successfully"}
+{"module": "AutonomousReportGenerator", "topic": "GenAi in Civil Engineering", "format": "pdf", "timestamp": "2026-02-23T10:11:27.166021Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "F:\\Sharan AI Projects\\GenAI AgenticAI Projects\\Automated_research_report_generation\\generated_report\\GenAi_in_Civil_Engineering_20260223_154127\\GenAi_in_Civil_Engineering_20260223_154127.pdf", "timestamp": "2026-02-23T10:11:27.177945Z", "level": "info", "event": "Centered PDF saved successfully"}
+{"module": "AutonomousReportGenerator", "path": "F:\\Sharan AI Projects\\GenAI AgenticAI Projects\\Automated_research_report_generation\\generated_report\\GenAi_in_Civil_Engineering_20260223_154127\\GenAi_in_Civil_Engineering_20260223_154127.pdf", "timestamp": "2026-02-23T10:11:27.178532Z", "level": "info", "event": "Report saved successfully"}
