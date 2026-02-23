@@ -10,7 +10,6 @@ from langchain_groq import ChatGroq
 from research_and_analyst.logger import GLOBAL_LOGGER as log
 from research_and_analyst.exception.custom_exception import ResearchAnalystException
 
-
 class ApiKeyManager:
     """
     Loads and manages all environment-based API keys.
@@ -45,7 +44,6 @@ class ApiKeyManager:
             str | None: API key value if found.
         """
         return self.api_keys.get(key)
-
 
 class ModelLoader:
     """
@@ -152,14 +150,13 @@ class ModelLoader:
             else:
                 log.error("Unsupported LLM provider encountered", provider=provider)
                 raise ValueError(f"Unsupported LLM provider: {provider}")
-
+                
             log.info("LLM loaded successfully", provider=provider, model=model_name)
             return llm
 
         except Exception as e:
             log.error("Error loading LLM", error=str(e))
             raise ResearchAnalystException("Failed to load LLM", sys)
-
 
 # ----------------------------------------------------------------------
 # Standalone Testing

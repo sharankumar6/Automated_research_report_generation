@@ -13,7 +13,6 @@ def _project_root() -> Path:
     """
     return Path(__file__).resolve().parents[1]
 
-
 def load_config(config_path: str | None = None) -> dict:
     """
     Load YAML configuration from a consistent project-level location.
@@ -61,8 +60,7 @@ def load_config(config_path: str | None = None) -> dict:
     except Exception as e:
         log.error("Error loading configuration", error=str(e))
         raise ResearchAnalystException("Failed to load configuration file", e)
-
-
+        
 # ----------------------------------------------------------------------
 # 🔹 Test Run (Standalone)
 # ----------------------------------------------------------------------
